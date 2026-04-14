@@ -1,5 +1,5 @@
 
-module "vpc" {
+module "Vpc" {
   source        = "./modules/vpc"
   vpc_cidr      = "10.0.0.0/16"
   subnet_cidr   = "10.0.1.0/24"
@@ -7,7 +7,7 @@ module "vpc" {
   env           = "dev"
 }
 
-module "ec2" {
+module "EC2" {
   source            = "./modules/ec2"
   ami_id            = "ami-0afc7fe9be84307e4"
   instance_type     = "t2.micro"
